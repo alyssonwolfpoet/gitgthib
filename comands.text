@@ -42,3 +42,16 @@ git push -u origin main
 git remote add origin https://github.com/alyssonwolfpoet/gitgthib.git
 git branch -M main
 git push -u origin main
+
+======================================================================
+#criar chave 
+$ssh-keygen -t ed25519 -C email@email.com
+$eval $(ssh-agent -s) 
+//estando dentro do ssh diretorio /c/Users/Alysson/.ssh
+$ssh-add id_ed25519
+//com chave usa ssh para clonar
+$git clone git@github.com:alyssonwolfpoet/gitgthib.git
+
+#token
+no github area do tokyn marca o repor e gera
+so usar o clone normal vai abri uma tela e bota o token
